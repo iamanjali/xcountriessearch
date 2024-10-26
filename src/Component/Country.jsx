@@ -14,11 +14,14 @@ function Country () {
     }, []);
 
     const filterCountries = countries.filter(country => {
-        const name = country.name.common.toLowerCase();
-        const abbr = country.cca3.toLowerCase();
-        const altNames = country.altSpellings ? country.altSpellings.map(name => name.toLowerCase()) : [];
+        // const name = country.name.common.toLowerCase();
+        // const abbr = country.cca3.toLowerCase();
+        // const altNames = country.altSpellings ? country.altSpellings.map(name => name.toLowerCase()) : [];
 
-        return name.includes(searchCountry.toLowerCase()) || abbr.includes(searchCountry.toLowerCase()) || altNames.some(altName => altName.includes(searchCountry.toLowerCase()));
+        // return name.includes(searchCountry.toLowerCase()) || abbr.includes(searchCountry.toLowerCase()) || altNames.some(altName => altName.includes(searchCountry.toLowerCase()));
+
+        const name = country.name.common.toLowerCase();
+        return name.includes(searchCountry.toLowerCase());
     });
 
     return (
