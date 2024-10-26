@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Card from "./Card"
-import styles from "./Country.module.css"
+// import styles from "./Country.module.css"
+import './Country.css'
 
 function Country () {
     const [countries, setCountries] = useState([]);
@@ -21,7 +22,7 @@ function Country () {
     return (
         <>
         <input type="text" placeholder="Search for countries..."  value={searchCountry} onChange={(e) => setSearchCountry(e.target.value)}/>
-        <div className={styles.countryCard}>
+        <div className="countryCard">
         {  
             filterCountries.map((country) => (
                     // <Card key={country.cca3} name={country.name.common} flag={country.flags.png} abbr={country.cca3} />
