@@ -1,15 +1,5 @@
 .countryCard{
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid grey;
-    border-radius: 4px;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 200px;
-    padding: 16px;
-    margin-bottom: 4px;
-    box-sizing: border-box; */
+
     border: 1px solid #ddd;
     padding: 16px;
     border-radius: 8px;
