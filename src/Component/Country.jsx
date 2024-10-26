@@ -14,12 +14,6 @@ function Country () {
     }, []);
 
     const filterCountries = countries.filter(country => {
-        // const name = country.name.common.toLowerCase();
-        // const abbr = country.cca3.toLowerCase();
-        // const altNames = country.altSpellings ? country.altSpellings.map(name => name.toLowerCase()) : [];
-
-        // return name.includes(searchCountry.toLowerCase()) || abbr.includes(searchCountry.toLowerCase()) || altNames.some(altName => altName.includes(searchCountry.toLowerCase()));
-
         const name = country.name.common.toLowerCase();
         return name.includes(searchCountry.toLowerCase());
     });
@@ -30,7 +24,8 @@ function Country () {
         <div className={styles.country}>
         {  
             filterCountries.map((country) => (
-                    <Card key={country.cca3} name={country.name.common} flag={country.flags.png} abbr={country.cca3} />
+                    // <Card key={country.cca3} name={country.name.common} flag={country.flags.png} abbr={country.cca3} />
+                    <Card name={country.name.common} flag={country.flags.png} />
             ))
         }
         </div>
