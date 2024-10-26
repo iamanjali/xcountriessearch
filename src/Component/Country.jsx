@@ -22,7 +22,7 @@ function Country () {
     return (
         <>
         <input type="text" placeholder="Search for countries..."  value={searchCountry} onChange={(e) => setSearchCountry(e.target.value)}/>
-        <div className="countryCard">
+        <div>
         {  
             filterCountries.map((country) => (
                     // <Card key={country.cca3} name={country.name.common} flag={country.flags.png} abbr={country.cca3} />
